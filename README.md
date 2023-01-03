@@ -3,7 +3,7 @@ Go Module developed to concurrently GZIP compress any io.ReadCloser in-memory.
 
 ## Setup
 ```bash
-$ go get github.com/SandersN79/ByteCompressorSF
+$ go get github.com/SandersN79/byteCompressor
 ```
 
 ## Test
@@ -16,7 +16,7 @@ $ go test
 package main
 
 import (
-	"github.com/SandersN79/ByteCompressorSF"
+	"github.com/SandersN79/byteCompressor"
 	"bytes"
 	"fmt"
 	"io"
