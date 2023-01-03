@@ -1,4 +1,4 @@
-package ByteCompressor
+package byteCompressor
 
 import (
 	"compress/gzip"
@@ -10,7 +10,7 @@ type BytesCompressor interface {
 	io.Reader
 }
 
-// NewBytesCompressor takes a source of uncompressed bytes and concurrently compresses into a ByteCompressor
+// NewBytesCompressor takes a source of uncompressed bytes and concurrently compresses into a byteCompressor
 func NewBytesCompressor(rc io.ReadCloser) BytesCompressor {
 	rp, wp := io.Pipe() //read process, write process
 	go func() {         //go func is asynchronous, will continue past it while its running

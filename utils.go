@@ -1,4 +1,4 @@
-package ByteCompressor
+package byteCompressor
 
 import (
 	"bytes"
